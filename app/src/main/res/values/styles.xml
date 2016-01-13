@@ -1,12 +1,12 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style>
+    </style>-->
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
@@ -16,5 +16,134 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- Toolbar样式 -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base"></style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/system_main_color</item>
+        <item name="toolbarStyle">@style/CustomToolbar</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeStyle">@style/CustomActionMode</item>
+    </style>
+
+    <style name="CustomToolbar" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="android:minHeight">@dimen/toolbar_height</item>
+        <item name="height">@dimen/toolbar_height</item>
+    </style>
+
+    <style name="CustomActionMode" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="background">?android:attr/actionModeBackground</item>
+        <item name="backgroundSplit">?android:attr/actionModeSplitBackground</item>
+        <item name="height">@dimen/toolbar_height</item>
+        <item name="titleTextStyle">
+            @android:style/TextAppearance.DeviceDefault.Widget.ActionMode.Title
+        </item>
+        <item name="subtitleTextStyle">
+            @android:style/TextAppearance.DeviceDefault.Widget.ActionMode.Subtitle
+        </item>
+    </style>
+    <!--/*********************************************************************/-->
+
+    <style name="icon_style">
+        <item name="android:layout_width">@dimen/icon_size</item>
+        <item name="android:layout_height">@dimen/icon_size</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="icon_touch_style">
+        <item name="android:layout_width">@dimen/icon_size</item>
+        <item name="android:layout_height">@dimen/icon_size</item>
+        <item name="android:padding">@dimen/icon_padding</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+
+    <style name="small_icon_style">
+        <item name="android:layout_width">@dimen/icon_size_small</item>
+        <item name="android:layout_height">@dimen/icon_size_small</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="small_icon_touch_style">
+        <item name="android:layout_width">@dimen/layout_small_height</item>
+        <item name="android:layout_height">@dimen/layout_small_height</item>
+        <item name="android:padding">@dimen/icon_padding</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="common_layout">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/common_layout</item>
+    </style>
+
+    <style name="common_change_style" parent="common_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_text_height</item>
+        <item name="android:paddingRight">@dimen/layout_padding</item>
+        <item name="android:paddingLeft">@dimen/layout_padding</item>
+    </style>
+
+    <style name="common_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/black_alpha</item>
+        <item name="android:textSize">@dimen/text_body</item>
+    </style>
+
+
+    <!-- 按钮样式 -->
+    <style name="button_default_style" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textColor">@color/white_normal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textSize">@dimen/text_button</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="button_inline_style" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textColor">@color/black_alpha</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_inline</item>
+        <item name="android:textSize">@dimen/text_button</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="input_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/edittext_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingRight">@dimen/layout_padding</item>
+        <item name="android:paddingLeft">@dimen/layout_padding</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="input_text_style" parent="common_text_style">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="input_edittext_style" parent="common_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/edittext_height</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColorHint">@color/black_alpha_more</item>
+        <item name="android:textColor">@color/black_normal</item>
+        <item name="android:textSize">@dimen/text_body</item>
+    </style>
 
 </resources>

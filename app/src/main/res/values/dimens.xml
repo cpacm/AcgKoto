@@ -3,4 +3,48 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <!-- 页面左右的边距统一为16dp -->
+    <dimen name="layout_margin">16dp</dimen>
+    <dimen name="layout_padding">16dp</dimen>
+    <dimen name="title_height">48dp</dimen>
+    <dimen name="toolbar_height">48dp</dimen>
+    <dimen name="bar_height">56dp</dimen>
+    <dimen name="edittext_height">56dp</dimen>
+    <dimen name="caption_height">24dp</dimen>
+    <dimen name="line_height">8dp</dimen>
+    <dimen name="line_height_half">4dp</dimen>
+    <dimen name="line_height_double">16dp</dimen>
+    <dimen name="block_height">36dp</dimen>
+    <dimen name="layout_height">72dp</dimen>
+    <dimen name="layout_small_height">48dp</dimen>
+    <dimen name="layout_text_height">48dp</dimen>
+    <!-- 图标大小 --><!-- 48dpX48dp == 96X96px||192X192px -->
+    <!-- 图标或者按钮的内边距为12dp。1、当48dp大小的图片放在72dp高的layout中；2、 当24dp大小的图片放在48dp高的layout中；-->
+    <dimen name="icon_padding">12dp</dimen>
+    <dimen name="icon_margin">12dp</dimen>
+    <!-- 当边界是图片时用于补充边距的不足  -->
+    <dimen name="icon_add_padding">4dp</dimen>
+    <dimen name="icon_add_margin">4dp</dimen>
+    <!-- 切图太大时  -->
+    <dimen name="icon_inline_padding">4dp</dimen>
+    <dimen name="icon_inline_padding_sub">-4dp</dimen>
+    <dimen name="icon_small_inline_padding">2dp</dimen>
+    <dimen name="icon_size">48dp</dimen>
+    <dimen name="icon_size_small">24dp</dimen>
+    <dimen name="logo_size">72dp</dimen>
+
+    <!-- 字体大小 -->
+    <dimen name="text_display3">56sp</dimen>
+    <dimen name="text_display2">45sp</dimen>
+    <dimen name="text_display1">34sp</dimen>
+    <dimen name="text_headline">24sp</dimen>
+    <dimen name="text_title">20sp</dimen>
+    <dimen name="text_subhead">16sp</dimen>
+    <dimen name="text_body">14sp</dimen>
+    <dimen name="text_caption">12sp</dimen>
+    <dimen name="text_mini">10sp</dimen>
+    <dimen name="text_menu">14sp</dimen>
+    <dimen name="text_button">16sp</dimen>
+    <dimen name="text_navi">18sp</dimen>
 </resources>
