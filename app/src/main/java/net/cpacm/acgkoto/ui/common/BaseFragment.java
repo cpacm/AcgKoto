@@ -1,6 +1,7 @@
 package net.cpacm.acgkoto.ui.common;
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.FragmentManager;
@@ -19,7 +20,7 @@ import net.cpacm.acgkoto.R;
  * @Auther: cpacm
  * @Date: 2015/10/22 0022-下午 4:36
  */
-public abstract class BaseFragment extends AnalyticsFragment {
+public abstract class BaseFragment extends Fragment {
 
     private AbstractAppActivity fenActivity;
     private FragmentManager fragmentManager;
