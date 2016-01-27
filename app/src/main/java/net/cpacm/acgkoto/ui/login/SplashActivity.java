@@ -4,9 +4,10 @@ import android.os.Bundle;
 import android.app.Activity;
 
 import net.cpacm.acgkoto.R;
+import net.cpacm.acgkoto.ui.common.AbstractAppActivity;
 
 
-public class SplashActivity extends Activity {
+public class SplashActivity extends AbstractAppActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
