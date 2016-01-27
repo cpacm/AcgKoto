@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -19,10 +20,9 @@ import net.cpacm.acgkoto.R;
  * @Auther: cpacm
  * @Date: 2015/10/22 0022-下午 2:41
  */
-public abstract class AbstractAppActivity extends Activity {
+public abstract class AbstractAppActivity extends AppCompatActivity {
 
     private GlobalApplication app;
-    private BackPressedListener backPressedListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -131,27 +131,5 @@ public abstract class AbstractAppActivity extends Activity {
             manager.hideSoftInputFromWindow(token,
                     InputMethodManager.HIDE_NOT_ALWAYS);
         }
-    }
-
-    @Override
-    public void onBackPressed() {
-        if (backPressedListener != null) {
-            if (backPressedListener.pageBack()) {
-                super.onBackPressed();
-            }
-        } else
-            super.onBackPressed();
-    }
-
-    public BackPressedListener getBackPressedListener() {
-        return backPressedListener;
-    }
-
-    public void setBackPressedListener(BackPressedListener backPressedListener) {
-        this.backPressedListener = backPressedListener;
-    }
-
-    public interface BackPressedListener {
-        boolean pageBack();
     }
 }
