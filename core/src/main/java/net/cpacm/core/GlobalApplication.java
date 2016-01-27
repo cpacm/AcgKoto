@@ -16,8 +16,8 @@ import java.util.List;
 /**
  * Global application
  *
- * @Auther: cpacm
- * @Date: 2015/10/24 0024-上午 9:59
+ * Auther: cpacm
+ * Date: 2015/10/24
  */
 public class GlobalApplication extends Application {
 
