@@ -1,4 +1,4 @@
-package net.cpacm.core.dao;
+package net.cpacm.core.service;
 
 /**
  * 通用的接口数据模板<br />

@@ -1,6 +1,5 @@
 package net.cpacm.core.http;
 
-import com.android.volley.VolleyError;
 
 /**
  * volley网络请求监听器

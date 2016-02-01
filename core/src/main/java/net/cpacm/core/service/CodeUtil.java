@@ -1,4 +1,4 @@
-package net.cpacm.core.dao;
+package net.cpacm.core.service;
 
 /**
  * 服务器返回的状态码
